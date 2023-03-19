@@ -1,0 +1,12 @@
+83656f8 6b: Added gitlog of feature branch
+83cd739 6a: Added gitlog of master
+4f52f4c Revert "5c: Merge branch 'feature_2'"
+0b18ee7 5c: Merge branch 'feature_2'
+e63486a 5b: Added variable for the result filename
+33bc9db (feature_2) 5a: Implemented side by side comparison
+89f4357 (feature_1) 4b: Added .gitignore
+51622ee 4a: Extended script to write results to file
+73510be Revert "3a: Implemented colorized diff"
+14e5ce6 3a: Implemented colorized diff
+860c9de 2: Implemented diff
+5e943b8 1: Initial commit
