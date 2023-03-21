@@ -5,10 +5,10 @@ Do the following:
 
 Answer the following questions:
 - What does the '-t' option do? 
-    Your answer:
+    Your answer: The "-t" option is used to tag the resulting image with a name and optional tag. In this case, the tag name is 'devops-primer'.
 
-- What is the purpose of the '.'? 
-    Your answer:
+- What is the purpose of the '.'?
+    Your answer: The '.' at the end of the command specifies the build context, which is the directory where the Dockerfile and any required files are located. In this case, the current directory is used as the build context.
 
 
 --------------------------------------------------------------------
@@ -17,10 +17,10 @@ Answer the following questions:
 
 Answer the following questions:
 - What do you see?
-    Your answer:
+    Your answer: A list of Docker images that are currently present on my system
 
 - What is the size of your image?
-    Your answer:
+    Your answer: The size of an image refers to the amount of disk space that is required to store the image
 
 
 --------------------------------------------------------------------
@@ -29,11 +29,11 @@ Answer the following questions:
 
 Answer the following questions:
 - What do you see?
-    Your answer:
+    Your answer:"You are logged in as root"
 
 - In the Dockerfile a file with the name 'who.who' is created. Where
   can we find this file?
-    Your answer:
+    Your answer: '/my-app' directory
 
 
 --------------------------------------------------------------------
@@ -44,12 +44,13 @@ Answer the following questions:
 
 Answer the following questions:
 - What do you see?
-    Your answer:
+    Your answer: You are logged in as datpd
+
 
 
 - Do you see the same result compared to running the container (in 
   the previous step)? Explain why or why not.
-    Your answer:
+    Your answer: No, because the result based on my local system's configuration.
 
 
 --------------------------------------------------------------------
@@ -63,10 +64,12 @@ Answer the following questions:
 
 Answer the following questions:
 - What do you see?
-    Your answer:
+    Your answer: You are logged in as root
+
 
 - Was it what you expected? Explain why or why not.
-    Your answer:
+    Your answer: No, because when modify the Dockerfile, we must rebuild to ensure
+    that we're building the image with the latest changes.
 
  
 --------------------------------------------------------------------
@@ -76,5 +79,5 @@ Answer the following questions:
 
 Answer the following questions:
 - What do you see?
-    Your answer:
+    Your answer: Hello root
 
