@@ -1,19 +1,21 @@
 #!/bin/bash
 
 # TODO: ./todo.sh 1
-#       Build and run the container in 1-container. 
+#       Build and run the container in 1-container.
 #       Give the image a proper name (or tag) using the -t flag.
 #       Run the container in detached mode using the -d flag and give it a proper name.
+        docker build -t task_1 ./1-container
+        docker run -d -p 9000:9000 task_1
 
 
 # TODO: ./todo.sh 2
-#       Serve static content using a standard nginx container. 
+#       Serve static content using a standard nginx container.
 #       Give the image a proper name (or tag) using the -t flag.
 #       Create a volume mapping to serve the static web site located in 1-container.
 
 
 # TODO: ./todo.sh 3
-#       Configure a standard nginx container to reverse proxy to google. 
+#       Configure a standard nginx container to reverse proxy to google.
 #       If needed copy the commands from ./todo.sh 2 to serve the static website (using volume mapping).
 #       Create a volume mapping to the reverse-proxy configuration located in 2-reverse-proxy.
 #       Properly configure the 2-reverse-proxy/reverse_proxy.conf so that request to /search go to google.com.
