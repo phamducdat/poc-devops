@@ -22,3 +22,11 @@ T
 $week1/assignment2-git/git/.gitignore,5/9/5902a38631c62b254f2cfa4bda07f4adee516b8e
 S
 #week1/assignment2-git/git/README.md,f/d/fde70d2d65783816b9a63f5d2beadbe41d4e809b
+H
+week4/0-primer/script.sh,9/4/94c2a3b375465155755b46f292f9f2cf9959f517
+F
+week4/0-primer/who.who,8/7/8731ebea258f4907be4558f4dcae97eb0fb44d72
+?
+week4/README.md,0/3/0376e1481245f589581119851b86f0feac8d1678
+I
+week4/0-primer/Dockerfile,7/c/7cc93035fc20947cc74e711e7839529f45c8c645

@@ -1,31 +1,17 @@
-#
-# Each instruction in this file generates a new layer that gets pushed to your local image cache
-#
+# We are using a different base image compared to the primer.
+# In the primer, we used a lightweight version of Linux called Alpine Linux.
+# In this container, we will use the python base container which means that
+# python is already installed in the container.
+FROM python:3.10-slim-buster
 
-#
-# Lines preceeded by # are regarded as comments and ignored
-#
+# Set the working directory to /app
+WORKDIR /app
 
-#
-# The line below states we will base our new image on the Latest Official Ubuntu 
-FROM ubuntu:latest
+# Copy the required files to the working directory
+COPY . /app
 
-#
-# Identify the maintainer of an image
-LABEL maintainer="myname@somecompany.com"
+# Expose the port for the web server
+EXPOSE 9000
 
-#
-# Update the image to the latest packages
-RUN apt-get update && apt-get upgrade -y
-
-#
-# Install NGINX to test.
-RUN apt-get install nginx -y
-
-#
-# Expose port 80
-EXPOSE 80
-
-#
-# Last is the actual command to start up NGINX within our Container
-CMD ["nginx", "-g", "daemon off;"]
+# Run the start.sh script to serve the website
+CMD ["./start.sh"]
