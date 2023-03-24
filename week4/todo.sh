@@ -15,17 +15,14 @@ if [ "$1" == "2" ]; then
   docker run -d -p 8080:80 -v "$(pwd)/1-container:/usr/share/nginx/html" nginx
 fi
 
-case $1 in
-  3)
-    docker run -d --name nginx_reverse_proxy -p 8080:8080 -v $(pwd)/2-reverse-proxy/reverse_proxy.conf:/etc/nginx/conf.d/reverse_proxy.conf nginx
-    ;;
-  *)
-    echo "Usage: ./todo.sh <option>"
-    echo "Options:"
-    echo "  3: Serve the static website using Nginx and reverse proxy requests to '/search' to google.com"
-    ;;
-esac
+if [ "$1" == "3" ]; then
+  #       Configure a standard nginx container to reverse proxy to google.
+  #       If needed copy the commands from ./todo.sh 2 to serve the static website (using volume mapping).
+  #       Create a volume mapping to the reverse-proxy configuration located in 2-reverse-proxy.
+  #       Properly configure the 2-reverse-proxy/reverse_proxy.conf so that request to /search go to google.com.
+  docker run -d --name nginx_reverse_proxy -p 8080:8080 -v $(pwd)/2-reverse-proxy/reverse_proxy.conf:/etc/nginx/conf.d/reverse_proxy.conf nginx
 
+fi
 
 #if [ "$1" == "4" ]; then
 #       Clone and run the simple-todo-app using an nginx container.
