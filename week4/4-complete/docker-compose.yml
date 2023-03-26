@@ -4,6 +4,7 @@ services:
     # TODO: Build the backend service using the provided Dockerfile (in 4-complete/backend)
   nginx:
     image: nginx
+    container_name: week4_frontend
     ports:
       - '8080:80'
     volumes:
