@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 py-5">
-        <h1>{{ listName }}</h1>
+        <h1>DATPD</h1>
       </div>
     </div>
     <div class="row mb-3">
