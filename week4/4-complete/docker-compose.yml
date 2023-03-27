@@ -1,7 +1,8 @@
 version: "3.9"
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
     ports:
       - "8081:80"
   frontend:
@@ -9,4 +10,7 @@ services:
     ports:
       - '8080:80'
     volumes:
-      - '../4-container/frontend/dist:/usr/share/nginx/html'
+      - '../4-complete/frontend/dist:/usr/share/nginx/html'
+      - '../4-complete/frontend/nginx.conf:/etc/nginx/conf.d/default.conf'
+    depends_on:
+      - backend
