@@ -9,3 +9,5 @@ X
 (week2/assignment1-scripting/numbers.data,d/c/dce7405f668902ba6950d36812bb01acce86158f
 ?
 week3/README.md,7/b/7ba748f072326b55fc667c41fa8bb43feaeea796
+R
+"week4/3-compose/docker-compose.yml,6/6/662009639a4ed0bbfe2b5160afeda733f347613c
