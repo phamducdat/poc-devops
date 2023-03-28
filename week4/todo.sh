@@ -35,8 +35,9 @@ if [ "$1" == "4" ]; then
 
 fi
 
-#if [ "$1" == "5" ]; then
-#       Clean up your stuff.
-#       Stop all your containers (so other containers should not be stopped)
-#       Remove your images (please leave the other images alone)
-#fi
+if [ "$1" == "5" ]; then
+  # Stop all your containers (so other containers should not be stopped)
+  # Remove your images (please leave the other images alone)
+  docker stop $(docker ps -aq)
+  docker rmi $(docker images -q)
+fi
