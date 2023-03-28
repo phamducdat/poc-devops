@@ -12,7 +12,7 @@ if [ "$1" == "2" ]; then
   #       Serve static content using a standard nginx container.
   #       Give the image a proper name (or tag) using the -t flag.
   #       Create a volume mapping to serve the static web site located in 1-container.
-  docker run -d -p 8080:80 -v "$(pwd)/1-container:/usr/share/nginx/html" nginx
+  docker run -d -p 8081:80 -v "$(pwd)/1-container:/usr/share/nginx/html" nginx
 fi
 
 if [ "$1" == "3" ]; then
@@ -24,12 +24,16 @@ if [ "$1" == "3" ]; then
 
 fi
 
-#if [ "$1" == "4" ]; then
+if [ "$1" == "4" ]; then
 #       Clone and run the simple-todo-app using an nginx container.
 #       Clone the simple-todo-app from https://gitlab.com/sealy/simple-todo-app
 #       Navigate to the project folder and create a build distribution (using npm run build)
 #       Run an nginx container that has a volume mapping to the build distribution (the dist folder)
-#fi
+  git clone https://gitlab.com/sealy/simple-todo-app.git
+  cd simple-todo-app && npm install && npm run build
+  docker run -d -p 8081:80 -v "$(pwd)/dist:/usr/share/nginx/html" nginx
+
+fi
 
 #if [ "$1" == "5" ]; then
 #       Clean up your stuff.
