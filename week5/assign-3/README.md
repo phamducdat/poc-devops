@@ -27,7 +27,7 @@ After you launch instance of assign-2
    ![img_7.png](img_7.png)
 8. Restart nginx:
    ![img_8.png](img_8.png)
-   So, after now, when you browser to you IPv4 of your instance, you'll see
+   Starting now, if you access the IPv4 address of your instance through a browser, you'll see:
    ![img_10.png](img_10.png)
    
 Repeat to a new instance for subnet-02
