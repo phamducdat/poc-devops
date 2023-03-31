@@ -4,7 +4,7 @@
 3. Enter a name for your VPC in the "Name tag" field.
 4. Enter the IPv4 CIDR block for your VPC in the "IPv4 CIDR block" field. For this example, enter "10.0.0.0/16".
 5. Click on "Create VPC".
-![](images/1.png)
+![img_1.png](img_1.png)
 
 ### Step 2: Create Subnets
 
@@ -15,7 +15,7 @@
 5. Enter the IPv4 CIDR block for your subnet in the "IPv4 CIDR block" field. For the first subnet, enter "10.0.1.0/24". For the second subnet, enter "10.0.2.0/24".
 6. Select the availability zone you want to use for the subnet from the "Availability Zone" dropdown list.
 7. Click on "Create subnet".
-   ![](images/2.png)
+![img_2.png](img_2.png)
 ### Step 3: Create an Internet Gateway
 
 1. Click on "Internet Gateways" in the left-hand menu.
@@ -26,7 +26,7 @@
    ![](images/3.1.png)
 
 6. Click on "Actions" and select "Attach to VPC".
-   ![](images/3.2.png)
+![img_3.png](img_3.png)
 
 7. Select the VPC you created in step 1 from the "VPC" dropdown list.
 8. Click on "Attach internet gateway".
@@ -45,8 +45,9 @@
 10. Enter "0.0.0.0/0" in the "Destination" field.
 11. Select the internet gateway you created in step 3 from the "Target" dropdown list.
 12. Click on "Save routes".
-    ![](images/4.1.png)
-    ![](images/4.2.png)
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
 
 ### Step 5: Associate Subnets with the Route Table
 
@@ -56,4 +57,4 @@
 4. Select the first subnet you created in step 2 from the list of subnets.
 5. Click on "Save".
 6. Repeat steps 3-5 to associate the second subnet with the route table.
-   ![](images/5.png)
+![img_7.png](img_7.png)

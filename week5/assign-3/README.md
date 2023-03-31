@@ -11,6 +11,8 @@ After you launch instance of assign-2
 2. Install Nodejs, NPM:
    `sudo apt-get update`
    `sudo apt-get install nodejs`
+   `sudo apt-get install npm`
+
 3. Start your git project:
    ![img_9.png](img_9.png)
 4. Clone your teacher's git:
@@ -21,7 +23,7 @@ After you launch instance of assign-2
    `sudo nano /etc/nginx/sites-available/default`
 
    ![img_6.png](img_6.png)
-`   server {
+   `   server {
    listen 80;
    server_name example.com; # Change this to your own domain name
    location / {
