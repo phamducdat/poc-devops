@@ -10,8 +10,8 @@ After you launch instance of assign-2
    I'm sorry about it
 2. Install Nodejs, NPM:
    `sudo apt-get update`
-   `sudo apt-get install nodejs`
-   `sudo apt-get install npm`
+   `sudo apt-get install nodejs -y`
+   `sudo apt-get install npm -y`
 
 3. Start your git project:
    ![img_9.png](img_9.png)
@@ -20,7 +20,7 @@ After you launch instance of assign-2
 5. Set up:
    ![img_2.png](img_2.png)
 6. Config your nginx to forward port 80 (TCP) to port 3000 (The port that your git project will run)
-   `sudo nano /etc/nginx/sites-available/default`
+   `sudo vim /etc/nginx/sites-available/default`
 
    ![img_6.png](img_6.png)
    `   server {
@@ -46,5 +46,5 @@ After you launch instance of assign-2
    ![img_8.png](img_8.png)
    Starting now, if you access the IPv4 address of your instance through a browser, you'll see:
    ![img_10.png](img_10.png)
-
+Install PM2 to run port 3000 after exit cloud
 Repeat to a new instance for subnet-02
