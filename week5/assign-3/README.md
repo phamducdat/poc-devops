@@ -46,5 +46,29 @@ After you launch instance of assign-2
    ![img_8.png](img_8.png)
    Starting now, if you access the IPv4 address of your instance through a browser, you'll see:
    ![img_10.png](img_10.png)
-Install PM2 to run port 3000 after exit cloud
+9. Install PM2 to run port 3000 after exit cloud 
+
+When you run a React project on port 3000 using the npm start or yarn start command, the application runs as a server process on your machine. If you exit the command line or terminal, the process will terminate, and the port will no longer be in use. So, to keep your React project running on port 3000 even after you exit the command line, you can use a process manager like PM2 to start the application as a background process.
+Here are the steps to use PM2 to run your React project as a background process:
+
+Install PM2 globally on your machine by running the following command:
+`sudo npm install -g pm2`
+Navigate to your React project directory using the terminal.
+
+Start your React project using PM2 by running the following command:
+
+`pm2 start npm -- start`
+This command will start your React project as a background process and keep it running even after you exit the terminal.
+
+You can check the status of your PM2 processes by running the following command:
+
+`pm2 status`
+This command will show you the status of all the processes running under PM2.
+
+To stop your React project, you can use the following command:
+
+`pm2 stop all`
+This command will stop all the processes running under PM2.
+
+By using PM2 to start your React project, you can ensure that your application remains running even after you exit the command line or terminal.
 Repeat to a new instance for subnet-02
